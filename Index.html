@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi! I'm James, and this is a glimpse into my professional journey.</p>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a web developer with a passion for creating dynamic and user-friendly websites. I have experience in various technologies and methodologies.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 James Portfolio</p>
-    </footer>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold">James Portfolio</h1>
+                    </div>
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="#projects" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                            <a href="#about" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="#contact" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <img src="path/to/image1.jpg" alt="Profile Image" class="rounded-full w-32 h-32 mb-4">
+        <p class="text-lg text-center px-6">Hello, I'm James! A passionate web developer with experience in creating dynamic and responsive web applications. Welcome to my portfolio!</p>
+        <div class="mt-4">
+            <a href="#projects" class="text-blue-500 hover:underline">Check out my projects</a>
+        </div>
+    </div>
 </body>
 </html>
